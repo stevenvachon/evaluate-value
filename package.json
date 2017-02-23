@@ -1,0 +1,27 @@
+{
+  "name": "evaluate-value",
+  "description": "Return a value or an evaluated function (with arguments).",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Steven Vachon <contact@svachon.com> (https://www.svachon.com/)",
+  "main": "lib/url-node",
+  "repository": "stevenvachon/evaluate-value",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "test": "mocha test --reporter spec --check-leaks --bail"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "function",
+    "options",
+    "value"
+  ]
+}
