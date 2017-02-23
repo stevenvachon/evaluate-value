@@ -1,7 +1,7 @@
 {
   "name": "evaluate-value",
   "description": "Return a value or an evaluated function (with arguments).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Steven Vachon <contact@svachon.com> (https://www.svachon.com/)",
   "main": "lib",
