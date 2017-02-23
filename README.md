@@ -4,7 +4,7 @@
 
 ## Installation
 
-[Node.js](http://nodejs.org/) `>= 6` is required. To install, type this at the command line:
+[Node.js](http://nodejs.org/) `>= 4` is required. To install, type this at the command line:
 ```shell
 npm install evaluate-value
 ```

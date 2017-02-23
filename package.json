@@ -4,20 +4,24 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "Steven Vachon <contact@svachon.com> (https://www.svachon.com/)",
-  "main": "lib/url-node",
+  "main": "lib",
   "repository": "stevenvachon/evaluate-value",
   "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
   },
   "engines": {
-    "node": ">= 6"
+    "node": ">= 4"
   },
   "scripts": {
-    "test": "mocha test --reporter spec --check-leaks --bail"
+    "build": "babel src --out-dir=lib --presets=es2015",
+    "prepublish": "npm test",
+    "test": "npm run build && mocha test --reporter spec --check-leaks --bail"
   },
   "files": [
-    "index.js"
+    "lib"
   ],
   "keywords": [
     "function",

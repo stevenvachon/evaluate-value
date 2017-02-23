@@ -1,5 +1,5 @@
 "use strict";
-const evaluateValue = require("./");
+const evaluateValue = require("./lib");
 const expect = require("chai").expect;
 
 
