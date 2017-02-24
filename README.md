@@ -1,5 +1,10 @@
 # evaluate-value [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+
 > Return a value or an evaluated function (with arguments).
+
+
+* When the first input argument is a function, it is executed with the remaining arguments, and the result is returned.
+* When the first input argument is *not* a function, it is simply returned.
 
 
 ## Installation
