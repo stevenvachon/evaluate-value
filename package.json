@@ -1,26 +1,29 @@
 {
   "name": "evaluate-value",
   "description": "Return a value or an evaluated function (with arguments).",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "license": "MIT",
-  "author": "Steven Vachon <contact@svachon.com> (https://www.svachon.com/)",
-  "main": "lib",
-  "repository": "stevenvachon/evaluate-value",
+  "author": "Steven Vachon <contact@svachon.com> (https://svachon.com)",
+  "browser": "index-es5.js",
+  "repository": "github:stevenvachon/evaluate-value",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "chai": "^4.0.0",
-    "mocha": "^3.4.2"
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   },
   "scripts": {
-    "pretest": "babel src --out-dir=lib --presets=es2015",
-    "test": "mocha test --reporter spec --check-leaks --bail"
+    "prepublishOnly": "npm test && babel index.js --out-file=index-es5.js --presets=@babel/env --source-maps",
+    "test": "mocha test.js --check-leaks --bail"
   },
   "files": [
-    "lib"
+    "index.js",
+    "index-es5.js",
+    "index-es5.js.map"
   ],
   "keywords": [
     "function",

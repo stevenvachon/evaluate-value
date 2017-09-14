@@ -2,7 +2,7 @@
 
 
 
-function evaluateValue(value, ...args)
+const evaluateValue = (value, ...args) =>
 {
 	if (typeof value === "function")
 	{
@@ -10,7 +10,7 @@ function evaluateValue(value, ...args)
 	}
 
 	return value;
-}
+};
 
 
 

@@ -9,7 +9,7 @@
 
 ## Installation
 
-[Node.js](http://nodejs.org/) `>= 4` is required. To install, type this at the command line:
+[Node.js](http://nodejs.org/) `>= 8` is required. To install, type this at the command line:
 ```shell
 npm install evaluate-value
 ```
@@ -21,21 +21,21 @@ npm install evaluate-value
 const evaluateValue = require('evaluate-value');
 
 evaluateValue(true);
-// true
+//-> true
 
-evaluateValue(function() {
-	return true
-});
-// true
+evaluateValue(() => true);
+//-> true
 
-evaluateValue(function(arg1, arg2) {
-	return arg1 === arg2;
-}, true, false);
-// false
+evaluateValue(
+  (arg1, arg2) => arg1 === arg2,
+  true,
+  false
+);
+//-> false
 ```
 
 
 [npm-image]: https://img.shields.io/npm/v/evaluate-value.svg
-[npm-url]: https://npmjs.org/package/evaluate-value
+[npm-url]: https://npmjs.com/package/evaluate-value
 [travis-image]: https://img.shields.io/travis/stevenvachon/evaluate-value.svg
 [travis-url]: https://travis-ci.org/stevenvachon/evaluate-value
